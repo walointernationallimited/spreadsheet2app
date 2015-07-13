@@ -34,11 +34,11 @@ id,title,description,imagelink,lastinserted
 - Publish Spreadsheet "spreadsheet2app_data" to the web
 Click "File" tab, then select "Publish to the web..."
 Click "Publish"
-Copy ID section __...__ in the link of the format: https://docs.google.com/spreadsheets/d/__...__/pub?output=html
+Copy spreadsheet key section __...__ in the link of the format: https://docs.google.com/spreadsheets/d/__...__/pub?output=html
 
 - Get the published feed for Spreadsheet "spreadsheet2app_data"
 Logout from Google Drive
-Browse the link to the published feed by pasting the copied ID section __...__ into the link:
+Browse the link to the published feed by pasting the copied spreadsheet key section __...__ into the link:
 https://spreadsheets.google.com/feeds/list/__...__/od6/public/values?alt=json&
 </pre>
 
