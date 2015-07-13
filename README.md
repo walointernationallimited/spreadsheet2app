@@ -1,5 +1,5 @@
 # spreadsheet2app
-spreadsheet2app is a project that contains steps in using Google Spreadsheet for data feed in JSON format to applications such as smartphone (Android, iOS, ...) apps.
+spreadsheet2app is a project that includes the steps in using Google Spreadsheet to feed its data in JSON format to applications such as smartphone (Android, iOS, ...) apps.
 
 <br/>The document was drafted on 12 July 2015.
 <br/>It is used as reference for
