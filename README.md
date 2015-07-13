@@ -28,7 +28,7 @@ Click on "Untitled spreadsheet" and rename it as "spreadsheet2app_data"
 
 - Create data for Spreadsheet "spreadsheet2app_data"
 - In CSV format
-id,title,description,imagelink,lastinserted
+id,title,description,imagelink,lastupdated
 1,Item One T,Item One D,http://drive.google.com/uc?export=view&id=__ID__&,7/13/2015
 2,Item Two T,Item Two D,http://drive.google.com/uc?export=view&id=__ID__&,7/13/2015
 
@@ -70,7 +70,7 @@ https://drive.google.com/file/d/__ID__/view?usp=sharing
 
 - Include copied __ID__ to the image link in the Spreadsheet "spreadsheet2app_data"
 - In CSV format
-id,title,description,imagelink,lastinserted
+id,title,description,imagelink,lastupdated
 1,Item One T,Item One D,http://drive.google.com/uc?export=view&id=__ID__&,7/13/2015
 2,Item Two T,Item Two D,http://drive.google.com/uc?export=view&id=__ID__&,7/13/2015
 
