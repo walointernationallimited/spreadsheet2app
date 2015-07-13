@@ -3,23 +3,37 @@ spreadsheet2app is a project that contains steps in using Google Spreadsheet for
 
 <br/>
 
-<p/>
+<pre>
 - Login to Google Drive
 http://drive.google.com/
 
-<p/>
 - Create Folder "spreadsheet2app"
 Right mouse button click on "My Drive"
 Select "New folder..."
 Label it as "spreadsheet2app"
 
-<p/>
 - Create Spreadsheet "spreadsheet2app_data"
 Double click on folder named "spreadsheet2app"
 Right click > New file... > Google Sheets
 Click on "Untitled" and rename it as "spreadsheet2app_data"
 
-- Create data fields for Spreadsheet "spreadsheet2app_data"
+- Create data for Spreadsheet "spreadsheet2app_data"
+- In CSV format
+id,title,description,imagelink,lastinserted
+1,Item One T,Item One D,http://drive.google.com/uc?export=view&id=<ID>&,7/13/2015
+2,Item Two T,Item Two D,http://drive.google.com/uc?export=view&id=<ID>&,7/13/2015
 
+- Publish Spreadsheet "spreadsheet2app_data" to the web
+Click "File" tab, then select "Publish to the web..."
+Click "Publish"
+Copy ID section ... in the link of the format: https://docs.google.com/spreadsheets/d/.../pub?output=html
+
+- Get the published feed for Spreadsheet "spreadsheet2app_data"
+Logout from Google Drive
+Browse the link to the published feed by pasting the copied ID section ... into the link:
+https://spreadsheets.google.com/feeds/list/.../od6/public/values?alt=json&
+
+
+</pre>
 
 <br/>
