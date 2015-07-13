@@ -5,6 +5,7 @@ spreadsheet2app is a project that includes the steps in using Google Spreadsheet
 <br/>It is used as reference for
 <br/>- <a href="#spreadsheet2app_1">Publishing JSON feed from Google spreadsheet</a>
 <br/>- <a href="#spreadsheet2app_2">Publishing web image from Google Drive</a>
+<br/>- <a href="#spreadsheet2app_3">Publishing Google URL Shortener with Google Analytics</a>
 
 <br/>
 
@@ -79,6 +80,27 @@ Browse the link for the updated image link: view-source:https://docs.google.com/
 Extract the updated image link formatted: http://drive.google.com/uc?export=view&id=__ID__&
 Browse the image link to see if it can be accessed without sign-in: http://drive.google.com/uc?export=view&id=__ID__&
 Check to see if the image link has also been updated in the JSON data feed: https://spreadsheets.google.com/feeds/list/.../od6/public/values?alt=json&
+
+</pre>
+
+<a name="spreadsheet2app_3" />
+<pre>
+<h1>Publishing Google URL Shortener with Google Analytics</h1>
+
+- Go to Google URL Shortener
+http://goo.gl/
+
+- Verify with Captcha test
+Check "I'm not a robot"
+Mark those images matching to the given keyword
+
+- Fill in the form with the data feed link
+At field label "Paste your long URL here:": https://spreadsheets.google.com/feeds/list/.../od6/public/values?alt=json&
+Hit button "Shorten URL"
+
+- Copy the shortened URL and its analytics link
+Shortened URL format: https://goo.gl/...ID...
+Its analytics link format: https://goo.gl/#analytics/goo.gl/...ID.../all_time
 
 </pre>
 
