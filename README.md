@@ -1,5 +1,7 @@
 # spreadsheet2app
-spreadsheet2app is a project that contains steps in using Google Spreadsheet for data feed in JSON format to applications such as smartphone (Android, iOS, ...) apps. The document was drafted on 12 July 2015. It is used as reference for
+spreadsheet2app is a project that contains steps in using Google Spreadsheet for data feed in JSON format to applications such as smartphone (Android, iOS, ...) apps. The document was drafted on 12 July 2015.
+
+<br/>It is used as reference for
 <br/>- <a href="#spreadsheet2app_1">Publishing JSON feed from Google spreadsheet</a>
 <br/>- <a href="#spreadsheet2app_2">Publishing web image from Google Drive</a>
 
@@ -19,7 +21,7 @@ Label it as "spreadsheet2app"
 
 - Create Spreadsheet "spreadsheet2app_data"
 Double click on folder named "spreadsheet2app"
-Right click > New file... > Google Sheets
+Right mouse button click at centre > New file... > Google Sheets
 Click on "Untitled spreadsheet" and rename it as "spreadsheet2app_data"
 
 - Create data for Spreadsheet "spreadsheet2app_data"
@@ -50,6 +52,32 @@ http://drive.google.com/
 Right mouse button click on "spreadsheet2app"
 Select "New folder..."
 Label it as "items"
+
+- Prepare image "item1.png"
+Double click on folder named "items"
+Right mouse button click at centre > Upload files... > Select "item1.png"
+
+- Share image "item1.png"
+Right mouse button click on "item1.png"
+Select "Share..."
+In the "Share with others" box, click on "Advanced"
+In the "Sharing settings" box, click on "Change" in the row titled "Private - Only you can access"
+In the "Link sharing" box, select option "On - Anyone with the link", then hit Save
+In the "Sharing settings" box, copy the ID section <ID> in the link
+https://drive.google.com/file/d/<ID>/view?usp=sharing
+
+- Include copied <ID> to the image link in the Spreadsheet "spreadsheet2app_data"
+- In CSV format
+id,title,description,imagelink,lastinserted
+1,Item One T,Item One D,http://drive.google.com/uc?export=view&id=<ID>&,7/13/2015
+2,Item Two T,Item Two D,http://drive.google.com/uc?export=view&id=<ID>&,7/13/2015
+
+- Test the updated image link from the published data feed
+Logout from Google Drive
+Browse the link for the updated image link: view-source:https://docs.google.com/spreadsheets/d/.../pub?output=csv
+Extract the updated image link formatted: http://drive.google.com/uc?export=view&id=<ID>&
+Browse the image link to see if it can be accessed without sign-in: http://drive.google.com/uc?export=view&id=<ID>&
+Check to see if the image link has also been updated in the JSON data feed: https://spreadsheets.google.com/feeds/list/.../od6/public/values?alt=json&
 
 </pre>
 
