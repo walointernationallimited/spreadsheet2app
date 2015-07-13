@@ -27,8 +27,8 @@ Click on "Untitled spreadsheet" and rename it as "spreadsheet2app_data"
 - Create data for Spreadsheet "spreadsheet2app_data"
 - In CSV format
 id,title,description,imagelink,lastinserted
-1,Item One T,Item One D,http://drive.google.com/uc?export=view&id=<ID>&,7/13/2015
-2,Item Two T,Item Two D,http://drive.google.com/uc?export=view&id=<ID>&,7/13/2015
+1,Item One T,Item One D,http://drive.google.com/uc?export=view&id=&lt;ID&rt;&,7/13/2015
+2,Item Two T,Item Two D,http://drive.google.com/uc?export=view&id=&lt;ID&rt;&,7/13/2015
 
 - Publish Spreadsheet "spreadsheet2app_data" to the web
 Click "File" tab, then select "Publish to the web..."
@@ -63,20 +63,20 @@ Select "Share..."
 In the "Share with others" box, click on "Advanced"
 In the "Sharing settings" box, click on "Change" in the row titled "Private - Only you can access"
 In the "Link sharing" box, select option "On - Anyone with the link", then hit Save
-In the "Sharing settings" box, copy the ID section <ID> in the link
-https://drive.google.com/file/d/<ID>/view?usp=sharing
+In the "Sharing settings" box, copy the ID section &lt;ID&rt; in the link
+https://drive.google.com/file/d/&lt;ID&rt;/view?usp=sharing
 
-- Include copied <ID> to the image link in the Spreadsheet "spreadsheet2app_data"
+- Include copied &lt;ID&rt; to the image link in the Spreadsheet "spreadsheet2app_data"
 - In CSV format
 id,title,description,imagelink,lastinserted
-1,Item One T,Item One D,http://drive.google.com/uc?export=view&id=<ID>&,7/13/2015
-2,Item Two T,Item Two D,http://drive.google.com/uc?export=view&id=<ID>&,7/13/2015
+1,Item One T,Item One D,http://drive.google.com/uc?export=view&id=&lt;ID&rt;&,7/13/2015
+2,Item Two T,Item Two D,http://drive.google.com/uc?export=view&id=&lt;ID&rt;&,7/13/2015
 
 - Test the updated image link from the published data feed
 Logout from Google Drive
 Browse the link for the updated image link: view-source:https://docs.google.com/spreadsheets/d/.../pub?output=csv
-Extract the updated image link formatted: http://drive.google.com/uc?export=view&id=<ID>&
-Browse the image link to see if it can be accessed without sign-in: http://drive.google.com/uc?export=view&id=<ID>&
+Extract the updated image link formatted: http://drive.google.com/uc?export=view&id=&lt;ID&rt;&
+Browse the image link to see if it can be accessed without sign-in: http://drive.google.com/uc?export=view&id=&lt;ID&rt;&
 Check to see if the image link has also been updated in the JSON data feed: https://spreadsheets.google.com/feeds/list/.../od6/public/values?alt=json&
 
 </pre>
