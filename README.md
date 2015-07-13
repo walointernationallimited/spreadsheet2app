@@ -5,7 +5,7 @@ spreadsheet2app is a project that contains steps in using Google Spreadsheet for
 
 <br/>
 
-<a name="#spreadsheet2app_1" />
+<a name="spreadsheet2app_1" />
 <pre>
 <h1>Publishing JSON feed from Google spreadsheet</h1>
 
@@ -39,7 +39,7 @@ Browse the link to the published feed by pasting the copied ID section ... into 
 https://spreadsheets.google.com/feeds/list/.../od6/public/values?alt=json&
 </pre>
 
-<a name="#spreadsheet2app_2" />
+<a name="spreadsheet2app_2" />
 <pre>
 <h1>Publishing web image from Google Drive</h1>
 
