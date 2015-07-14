@@ -6,6 +6,7 @@ spreadsheet2app is a project that includes the steps in using Google spreadsheet
 <br/>- <a href="#spreadsheet2app_1">Publishing JSON feed from Google spreadsheet</a>
 <br/>- <a href="#spreadsheet2app_2">Publishing web image from Google Drive</a>
 <br/>- <a href="#spreadsheet2app_3">Publishing Google URL Shortener with Google Analytics</a>
+<br/>- <a href="#spreadsheet2app_4">Sample Code Demo for Android using Eclipse</a>
 
 <br/>
 
@@ -101,6 +102,35 @@ Hit button "Shorten URL"
 - Copy the shortened URL and its analytics link
 Shortened URL format: https://goo.gl/...ID...
 Its analytics link format: https://goo.gl/#analytics/goo.gl/...ID.../all_time
+</pre>
+
+<a name="spreadsheet2app_4" />
+<pre>
+<h1>Sample Code Demo for Android using Eclipse</h1>
+
+- Go to GitHub repository for the project "spreadsheet2app"
+https://github.com/walointernationallimited/spreadsheet2app/
+
+- Download the project from the master branch
+Click on the button "Download ZIP" which should download from the link
+https://github.com/walointernationallimited/spreadsheet2app/archive/master.zip
+
+- Extract the Android project folder for Eclipse from the archive
+spreadsheet2app-master/samplecodedemo/android/eclipse/spreadsheet2app
+
+- Prepare Android project "spreadsheet2app" in Eclipse
+In Eclipse, go to File > Import > Existing Projects into Workspace
+In the "Import Projects" popup window, check "Select root directory" then locate the path spreadsheet2app-master/samplecodedemo/android/eclipse/spreadsheet2app
+The project "spreadsheet2app" should be selected and check "Copy projects into workspace"
+
+- Place Google shortened URL to the sample code demo
+Copy the generated Google shortened URL https://goo.gl/...ID...
+In function "doInBackground" of class "AsyncTaskSubmitStart" under Eclipse project path spreadsheet2app/src/com.example.spreadsheet2app/ItemsActivity.java, find 'aLink = "https://goo.gl/...ID...";'
+Paste it to the shortened URL to replace the one in the code.
+
+- Build the app on Eclipse
+With the Android device connected, click on the play button on Eclipse to run the Android application on the device.
+If it asks "Choose a running Android device", select the one connected for testing the Google spreadsheet feeding live data to the app.
 
 </pre>
 
