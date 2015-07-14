@@ -6,7 +6,7 @@ spreadsheet2app is a project that includes the steps in using Google spreadsheet
 <br/>- <a href="#spreadsheet2app_1">Publishing JSON feed from Google spreadsheet</a>
 <br/>- <a href="#spreadsheet2app_2">Publishing web image from Google Drive</a>
 <br/>- <a href="#spreadsheet2app_3">Publishing Google URL Shortener with Google Analytics</a>
-<br/>- <a href="#spreadsheet2app_4">Sample Code Demo for Android using Eclipse</a>
+<br/>- <a href="#spreadsheet2app_4">Testing Sample Code Demo for Android using Eclipse</a>
 
 <br/>
 
@@ -106,7 +106,7 @@ Its analytics link format: https://goo.gl/#analytics/goo.gl/...ID.../all_time
 
 <a name="spreadsheet2app_4" />
 <pre>
-<h1>Sample Code Demo for Android using Eclipse</h1>
+<h1>Testing Sample Code Demo for Android using Eclipse</h1>
 
 - Go to GitHub repository for the project "spreadsheet2app"
 https://github.com/walointernationallimited/spreadsheet2app/
