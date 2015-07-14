@@ -129,8 +129,10 @@ In function "doInBackground" of class "AsyncTaskSubmitStart" under Eclipse proje
 Paste it to the shortened URL to replace the one in the code.
 
 - Build the app on Eclipse
+Before running the app on the Android device, check the Google Analytics for "Total Clicks": https://goo.gl/#analytics/goo.gl/...ID.../all_time
 With the Android device connected, click on the play button on Eclipse to run the Android application on the device.
 If it asks "Choose a running Android device", select the one connected for testing the Google spreadsheet feeding live data to the app.
+After data has been fetched from the spreadsheet, check the Google Analytics and "Total Clicks" should have been increased: https://goo.gl/#analytics/goo.gl/...ID.../all_time
 
 </pre>
 
