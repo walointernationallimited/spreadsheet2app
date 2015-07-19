@@ -7,6 +7,7 @@ spreadsheet2app is a project that includes the steps in using Google spreadsheet
 <br/>- <a href="#spreadsheet2app_2">Publishing web image from Google Drive</a>
 <br/>- <a href="#spreadsheet2app_3">Publishing Google URL Shortener with Google Analytics</a>
 <br/>- <a href="#spreadsheet2app_4">Testing Sample Code Demo for Android using Eclipse</a>
+<br/>- <a href="#spreadsheet2app_5">Testing Sample Code Demo for Unity3D using C#</a>
 
 <br/>
 
@@ -132,6 +133,40 @@ Paste it to the shortened URL to replace the one in the code.
 Before running the app on the Android device, check the Google Analytics for "Total Clicks": https://goo.gl/#analytics/goo.gl/...ID.../all_time
 With the Android device connected, click on the play button on Eclipse to run the Android application on the device.
 If it asks "Choose a running Android device", select the one connected for testing the Google spreadsheet feeding live data to the app.
+After data has been fetched from the spreadsheet and listed on the app, check the Google Analytics and "Total Clicks" should have been increased: https://goo.gl/#analytics/goo.gl/...ID.../all_time
+
+</pre>
+
+<a name="spreadsheet2app_5" />
+<pre>
+<h1>Testing Sample Code Demo for Unity3D using C#</h1>
+
+- Go to GitHub repository for the project "spreadsheet2app"
+https://github.com/walointernationallimited/spreadsheet2app/
+
+- Download the project from the master branch
+Click on the button "Download ZIP" which should download from the link
+https://github.com/walointernationallimited/spreadsheet2app/archive/master.zip
+
+- Extract the Unity3D project folder for C# from the archive
+spreadsheet2app-master/samplecodedemo/unity3d/csharp
+
+- Prepare Unity3D project "spreadsheet2app" in Unity3D editor
+In Unity3D editor, go to Assets > Import Package > Custom Package...
+Select the extracted file spreadsheet2app-master/samplecodedemo/unity3d/csharp/spreadsheet2app.unitypackage
+In the "Importing package" popup window, check All including Plugins and spreadsheet2app folders
+Click on Import
+In the Project tab, go to the "Assets/spreadsheet2app" folder, double click on scene_spreadsheet2app.unity to load the scene
+
+- Place Google shortened URL to the sample code demo
+Copy the generated Google shortened URL https://goo.gl/...ID...
+In function "SetListStart" of class "Spreadsheet2App_MainCamera" under Unity3D project path Assets/spreadsheet2app/Spreadsheet2App_MainCamera.cs, find 'aLink = "https://goo.gl/...ID...";'
+Paste it to the shortened URL to replace the one in the code.
+
+- Run the app on Unity3D editor
+Before running the app, check the Google Analytics for "Total Clicks": https://goo.gl/#analytics/goo.gl/...ID.../all_time
+On Unity3D editor go to "File > Build Settings..." to add current scene scene_spreadsheet2app.unity in "Scenes In Build" if not already included and checked.
+Click on "Build and Run"
 After data has been fetched from the spreadsheet and listed on the app, check the Google Analytics and "Total Clicks" should have been increased: https://goo.gl/#analytics/goo.gl/...ID.../all_time
 
 </pre>
